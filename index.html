@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suppourt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@200..1000&family=Jaro:opsz@6..72&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="programming home.png" type="image/png">
+</head>
+<body>
+    <style>
+        :root{
+    --prymary-color: #000000;
+    --seconde-prymary: #ebebeb;
+    --main-color: rgb(0, 102, 255);
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--prymary-color); 
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    background-image: linear-gradient(90deg, 
+#757f9a
+,
+#d7dde8);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+nav{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #000000de;
+    z-index: 1032;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+button{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #000000de;
+    color: white;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.menu.active {
+    display: block;
+    right: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .5s ease .3s;
+    -webkit-transition: all .5s ease .3s;
+    -moz-transition: all .5s ease .3s;
+    -ms-transition: all .5s ease .3s;
+    -o-transition: all .5s ease .3s;
+}
+
+.menu ul li a:hover {
+    margin-right: 20px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cairo', sans-serif;
+}
+
+.outside div{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 180px;
+    text-align: center;
+}
+
+.outside div img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+    line-height: 1.8;
+}
+
+</style>
+    <nav class="frisid-hearder">
+        <div class="container">
+            <h3>بيت البرمجه</h3>
+            <button class="menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="outside">
+        <div class="container">
+            <img src="405085825_671210835156281_3662248199960801749_n.jpg" alt="">
+            <p>نعم يمكن أن يكون هناك مشكلة في الموقع إذا كان عندك أي مشكله تقدر تكلمنا عل الإميل دا</p>
+            <p>omar6789123h@gmail.com</p>
+        </div>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const menu = document.querySelector('.menu');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                menu.style.right = '-250px';
+            } else {
+                menu.style.display = 'block';
+                menu.style.right = '0';
+            }
+        });
+    </script>
+</body>
+</html>
